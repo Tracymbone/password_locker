@@ -8,7 +8,7 @@ def create_credentials(first_name, last_name, user_name, credential):
     return users
 
 
-def save_account(accounts):
+def save_user(users):
     accounts.save_account()
 
 

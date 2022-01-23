@@ -46,11 +46,11 @@ def isexist_page(pager):
 
 
 def delete_page(credential):
-    passwords.delete_page()
+    Credentials.delete_page()
 
 
 def display_pages():
-    return Password.display_page()
+    return Credentials.display_page()
 
 
 def main():

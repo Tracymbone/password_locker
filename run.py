@@ -3,9 +3,9 @@ from users import Users
 from credentials import Credentials
 
 
-def create_credentials(first_name, last_name, user_name, password):
-    accounts = Users(first_name, last_name, user_name, password)
-    return accounts
+def create_credentials(first_name, last_name, user_name, credential):
+    users = Users(first_name, last_name, user_name, credential)
+    return users
 
 
 def save_account(accounts):

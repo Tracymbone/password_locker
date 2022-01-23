@@ -24,8 +24,8 @@ def isexist_users(user_name):
     return Users.users_exists(user_name)
 
 
-def display_accounts():
-    return Accounts.display_accounts()
+def display_users():
+    return Users.display_users()
 
 
 def create_page(page, password):

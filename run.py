@@ -33,19 +33,19 @@ def create_page(page, credentials):
     return credentials
 
 
-def save_page(passwords):
-    passwords.save_page()
+def save_page(credentials):
+    credentials.save_page()
 
 
 def find_page(pager):
-    return Password.find_by_page(pager)
+    return Credentials.find_by_page(pager)
 
 
 def isexist_page(pager):
-    return Password.page_exists(pager)
+    return Credentials.page_exists(pager)
 
 
-def delete_page(passwords):
+def delete_page(credential):
     passwords.delete_page()
 
 

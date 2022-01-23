@@ -4,7 +4,7 @@ from credentials import Credentials
 
 
 def create_credentials(first_name, last_name, user_name, password):
-    accounts = Accounts(first_name, last_name, user_name, password)
+    accounts = Users(first_name, last_name, user_name, password)
     return accounts
 
 

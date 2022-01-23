@@ -12,8 +12,8 @@ def save_user(users):
     users.save_users()
 
 
-def delete_account(accounts):
-    accounts.delete_account()
+def delete_users(users):
+    users.delete_users()
 
 
 def find_accounts(user_name):

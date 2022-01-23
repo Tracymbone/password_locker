@@ -9,7 +9,7 @@ def create_credentials(first_name, last_name, user_name, credential):
 
 
 def save_user(users):
-    accounts.save_account()
+    users.save_users()
 
 
 def delete_account(accounts):

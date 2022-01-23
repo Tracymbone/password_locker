@@ -20,8 +20,8 @@ def find_users(user_name):
     return Users.find_by_user_name(user_name)
 
 
-def isexist_accounts(user_name):
-    return Accounts.account_exists(user_name)
+def isexist_users(user_name):
+    return Users.users_exists(user_name)
 
 
 def display_accounts():

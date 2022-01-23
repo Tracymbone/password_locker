@@ -16,8 +16,8 @@ def delete_users(users):
     users.delete_users()
 
 
-def find_accounts(user_name):
-    return Accounts.find_by_user_name(user_name)
+def find_users(user_name):
+    return Users.find_by_user_name(user_name)
 
 
 def isexist_accounts(user_name):

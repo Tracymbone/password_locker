@@ -54,7 +54,7 @@ def display_pages():
 
 
 def main():
-    print('WELCOME TO PASSLOCK')
+    print('WELCOME TO PASSWORD_LOCKER')
     print('Use the following numbers to pick their corresponding values')
     while True:
 

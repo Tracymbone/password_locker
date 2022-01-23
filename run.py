@@ -28,9 +28,9 @@ def display_users():
     return Users.display_users()
 
 
-def create_page(page, password):
-    passwords = Password(page, password)
-    return passwords
+def create_page(page, credentials):
+    credentials = credentials(page, credentials)
+    return credentials
 
 
 def save_page(passwords):

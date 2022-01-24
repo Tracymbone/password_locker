@@ -66,7 +66,7 @@ def main():
             username = input()
             print('Enter passoword')
             password = input()
-            account = find_accounts(username)
+            account = find_users(username)
             if account.user_name == username and account.password == password:
 
                 print('logged in ')
@@ -86,11 +86,11 @@ def main():
                         print('Page name')
                         page = input()
 
-                        print('password')
+                        print('credentials')
                         password = input()
 
                     # created and saved page
-                        save_page(create_page(page, password))
+                        save_page(create_page(page, Credentials))
 
                     elif log_choice == 2:
                         print("Enter the name of the page you want to delete")
@@ -107,20 +107,20 @@ def main():
                         if display_pages():
                             for pag in display_pages():
                                 print(
-                                    f'{pag.page}:{pag.password}'
+                                    f'{pag.page}:{pag.credential}'
                                 )
                         else:
-                            print('NO PASSWORD SAVED YET')
+                            print('NO CREDENTIAL SAVED YET')
                             print('\n')
 
                     elif log_choice == 4:
                         print('adios')
                         break
             else:
-                print('wrong credentials')
+                print('wrong passwords')
 
         if choice == 2:
-            print('NEW ACCOUNT')
+            print('NEW USERS')
             print('*'*100)
 
             print('FIRSTNAME')
@@ -132,7 +132,7 @@ def main():
             print('USERNAME')
             user_name = input()
 
-            print('PASSWORD')
+            print('CREDENTIALS')
             password = input()
 
             save_account(create_account(

@@ -158,7 +158,7 @@ def main():
                     Credentials = input()
 
                     # created and saved page
-                    save_page(create_page(page, password))
+                    save_page(create_page(page, Credentials))
 
                 elif log_choice == 2:
                     print("Enter the name of the page you want to delete")
@@ -175,10 +175,10 @@ def main():
                     if display_pages():
                         for pag in display_pages():
                             print(
-                                f'{pag.page}:{pag.password}'
+                                f'{pag.page}:{pag.credential}'
                             )
                     else:
-                        print('NO PASSWORD SAVED YET')
+                        print('NO CREDENTIAL SAVED YET')
 
                 elif log_choice == 4:
                     break
@@ -191,13 +191,13 @@ def main():
                                     ''')
 
         elif choice == 4:
-            if display_accounts():
-                for account in display_accounts():
+            if display_users():
+                for account in display_users():
                     print(
-                        f'{account.user_name}'
+                        f'{Users.user_name}'
                     )
             else:
-                print('NO ACCOUNTS')
+                print('NO USERS')
 
         elif choice == 5:
             print('adios')

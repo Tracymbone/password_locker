@@ -188,7 +188,7 @@ def main():
             print('ABOUT PASSWORD_LOCKER')
             print(
                 '''
-            Password_locker is an sort of script application that allows you to store  password from different ccounts. In case of many accounts on social media passlock can be used to store the different password from the social media  accounts.Instead of having to use one password for all your sites so that you can remember  easily,you can use different password and store them in passlock and only have to remember your passlock password. This can prove to be very helpful especially  against hackers.
+            This is a terminal based project where users can input their credentials according to the different accounts that they have.
                                     ''')
 
         elif choice == 4:

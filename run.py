@@ -136,15 +136,15 @@ def main():
             password = input()
 
             save_user(create_user(
-                first_name, last_name, user_name, password))
-            # create and save a new account
-            print('ACCOUNT CREATED')
+                first_name, last_name, user_name, Credentials))
+            # create and save a new user
+            print('ACCOUNT FORMED')
             while True:
 
                 print(
                     f'Welcome {user_name}, Use the following numbers to select their corresponding values')
                 print(
-                    ' 1) Save new password \n 2) Delete password \n 3) Display saved passwords \n 4) Log out ')
+                    ' 1) Save new credential \n 2) Delete credential \n 3) Display saved credential \n 4) Log out ')
 
                 log_choice = int(input())
                 if log_choice == 1:
@@ -154,8 +154,8 @@ def main():
                     print('Page name')
                     page = input()
 
-                    print('password')
-                    password = input()
+                    print('credential')
+                    Credentials = input()
 
                     # created and saved page
                     save_page(create_page(page, password))

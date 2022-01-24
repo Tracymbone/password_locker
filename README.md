@@ -43,3 +43,14 @@ To run the application, in your terminal:
 ### Technologies Used
 
 * Python3.8
+
+### contact information
+
++254740848186
+
++254701506901
+
+### Email Information
+tressy.mbone@student.moringaschool.com
+
+tracymbone1@gmail.com

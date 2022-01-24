@@ -135,7 +135,7 @@ def main():
             print('CREDENTIALS')
             password = input()
 
-            save_account(create_account(
+            save_user(create_user(
                 first_name, last_name, user_name, password))
             # create and save a new account
             print('ACCOUNT CREATED')

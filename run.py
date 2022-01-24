@@ -59,16 +59,16 @@ def main():
     print('Use the following numbers to pick their corresponding values')
     while True:
 
-        print(" 1) LOGIN \n 2) SIGN UP \n 3) ABOUT PASSLOCK \n 4) DISPLAY ACCOUNTS \n 5) SIGN OUT")
+        print(" 1) LOGIN \n 2) SIGN UP \n 3) ABOUT PASSWORD_LOCKER \n 4) DISPLAY ACCOUNTS \n 5) SIGN OUT")
 
         choice = int(input())
         if choice == 1:
             print('Enter username')
             username = input()
-            print('Enter passoword')
-            password = input()
-            account = find_users(username)
-            if account.user_name == username and account.password == password:
+            print('Enter credential')
+            Credentials = input()
+            user = find_users(username)
+            if user.username == username and user.credentials == Credentials:
 
                 print('logged in ')
                 while True:

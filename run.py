@@ -1,4 +1,5 @@
 #!/usr/bin/env python3.6
+from socket import create_server
 from users import Users
 from credentials import Credentials
 
@@ -135,10 +136,10 @@ def main():
             print('CREDENTIALS')
             password = input()
 
-            save_user(create_user(
+            save_user(create_server(
                 first_name, last_name, user_name, Credentials))
             # create and save a new user
-            print('ACCOUNT FORMED')
+            print('USER FORMED')
             while True:
 
                 print(
@@ -184,10 +185,10 @@ def main():
                     break
 
         elif choice == 3:
-            print('ABOUT PASSLOCK')
+            print('ABOUT PASSWORD_LOCKER')
             print(
                 '''
-            Passlock is an sort of script application that allows you to store  password from different ccounts. In case of many accounts on social media passlock can be used to store the different password from the social media  accounts.Instead of having to use one password for all your sites so that you can remember  easily,you can use different password and store them in passlock and only have to remember your passlock password. This can prove to be very helpful especially  against hackers.
+            Password_locker is an sort of script application that allows you to store  password from different ccounts. In case of many accounts on social media passlock can be used to store the different password from the social media  accounts.Instead of having to use one password for all your sites so that you can remember  easily,you can use different password and store them in passlock and only have to remember your passlock password. This can prove to be very helpful especially  against hackers.
                                     ''')
 
         elif choice == 4:

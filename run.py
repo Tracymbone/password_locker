@@ -76,7 +76,7 @@ def main():
                         f'Welcome {username}, Use the following numbers to select their corresponding          values')
 
                     print(
-                        ' 1) Save new password \n 2) Delete password \n 3) Display saved passwords \n 4) Log out ')
+                        ' 1) Save new credential \n 2) Delete credential \n 3) Display saved credentials \n 4) Log out ')
 
                     log_choice = int(input())
                     if log_choice == 1:
@@ -87,7 +87,7 @@ def main():
                         page = input()
 
                         print('credentials')
-                        password = input()
+                        Credentials = input()
 
                     # created and saved page
                         save_page(create_page(page, Credentials))
@@ -117,7 +117,7 @@ def main():
                         print('adios')
                         break
             else:
-                print('wrong passwords')
+                print('wrong credentials')
 
         if choice == 2:
             print('NEW USERS')

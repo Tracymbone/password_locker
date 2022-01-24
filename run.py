@@ -56,10 +56,10 @@ def display_pages():
 
 def main():
     print('WELCOME TO PASSWORD_LOCKER')
-    print('Use the following numbers to pick their corresponding values')
+    print('Use the following information to pick their corresponding values')
     while True:
 
-        print(" 1) LOGIN \n 2) SIGN UP \n 3) ABOUT PASSWORD_LOCKER \n 4) DISPLAY ACCOUNTS \n 5) SIGN OUT")
+        print(" 1) SIGN IN \n 2) REGESTER \n 3) ABOUT PASSWORD_LOCKER \n 4) DISPLAY USERS \n 5) SIGN OUT")
 
         choice = int(input())
         if choice == 1:
@@ -201,7 +201,7 @@ def main():
                 print('NO USERS')
 
         elif choice == 5:
-            print('adios')
+            print('Bye!welcome back again')
             break
 
 

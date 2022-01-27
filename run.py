@@ -1,4 +1,4 @@
-#!/usr/bin/env python3.6
+#!/usr/bin/env python3.8
 from socket import create_server
 from users import Users
 from credentials import Credentials
@@ -10,7 +10,7 @@ def create_credentials(first_name, last_name, user_name, credential):
 
 
 def save_user(users):
-    users.save_users()
+    users.save_user()
 
 
 def delete_users(users):
@@ -68,13 +68,13 @@ def main():
             print('Enter credential')
             Credentials = input()
             user = find_users(username)
-            if user.username == username and user.credentials == Credentials:
+            if user.user_name == user_name and user.credentials == Credentials:
 
                 print('logged in ')
                 while True:
 
                     print(
-                        f'Welcome {username}, Use the following numbers to select their corresponding          values')
+                        f'Welcome {user_name}, Use the following numbers to select their corresponding          values')
 
                     print(
                         ' 1) Save new credential \n 2) Delete credential \n 3) Display saved credentials \n 4) Log out ')
@@ -134,11 +134,11 @@ def main():
             user_name = input()
 
             print('CREDENTIALS')
-            password = input()
+            Credentials = input()
 
-            save_user(create_server(
+            save_user((
                 first_name, last_name, user_name, Credentials))
-            # create and save a new user
+            # save and create a new user
             print('USER FORMED')
             while True:
 
